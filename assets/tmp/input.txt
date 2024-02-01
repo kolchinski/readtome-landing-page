@@ -1,0 +1,6 @@
+file 'screenshot1_exported.png'
+duration 2
+file 'screenshot2_exported.png'
+duration 2
+file 'screenshot1_exported.png'
+duration 2
