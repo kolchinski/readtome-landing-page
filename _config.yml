@@ -54,7 +54,7 @@ features                                  :
 
   - title                                 : Follow along
     description                           : After scanning, your book's text is also available in digital form. Read along or use it elsewhere!
-    fontawesome_icon_name                 : file-text
+    fontawesome_icon_name                 : book
   
   - title                                 : Speed-read
     description                           : Listen at up to 2x speed, or slow your audio down to pay close attention.
