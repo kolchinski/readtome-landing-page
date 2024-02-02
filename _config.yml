@@ -44,7 +44,7 @@ features                                  :
     description                           : The scans are converted to high-quality audio using modern AI technology.
     fontawesome_icon_name                 : magic
 
-  - title                                 : Listen
+  - title                                 : Listen anytime
     description                           : Use the in-app player to listen to your audio clips whenever you'd like.
     fontawesome_icon_name                 : play-circle
 
@@ -52,13 +52,13 @@ features                                  :
     description                           : Pick between a selection of high-quality voices to narrate your books to you.
     fontawesome_icon_name                 : users
 
-  - title                                 : # Easy to Tweak
-    description                           : # Tweak accent color, images, icons and transparency via the _config.yml file. No HTML/CSS needed.
-    fontawesome_icon_name                 : # adjust
+  - title                                 : Follow along
+    description                           : After scanning, your book's text is also available in digital form. Read along or use it elsewhere!
+    fontawesome_icon_name                 : file-text
   
-  - title                                 : # Feature List
-    description                           : # Add features (like this one) to your site via the _config.yml file. No HTML/CSS needed.
-    fontawesome_icon_name                 : # star
+  - title                                 : Speed-read
+    description                           : Listen at up to 2x speed, or slow your audio down to pay close attention.
+    fontawesome_icon_name                 : fast-forward
 
   - title                                 : # Smart App Banner
     description                           : # Display a smart app banner on iOS devices.
