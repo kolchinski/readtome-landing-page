@@ -36,21 +36,21 @@ mastodon_link                             :
 # Feature List                            Edit, add or remove features to be presented.
 features                                  :
 
-  - title                                 : GitHub Pages Jekyll Theme
-    description                           : Designed for GitHub Pages. Fork. Edit _config.yml. Upload screenshot/video. Push to gh-pages branch. Voilá!
-    fontawesome_icon_name                 : magic
+  - title                                 : Scan books or other printed text
+    description                           : Scan up to 20 pages at a time using your phone camera.
+    fontawesome_icon_name                 : camera
     
-  - title                                 : iPhone Device Preview
-    description                           : Preview your app in the context of an iPhone device. Five different device colors included.
-    fontawesome_icon_name                 : mobile
+  - title                                 : Scans -> Audio!
+    description                           : The scans are converted to high-quality audio using modern AI technology.
+    fontawesome_icon_name                 : magic
 
-  - title                                 : Video Support
-    description                           : Preview app video on the iPhone device simply by placing your video files in the videos folder.
+  - title                                 : Listen
+    description                           : Use the in-app player to listen to your audio clips whenever you'd like.
     fontawesome_icon_name                 : play-circle
 
-  - title                                 : # Automatic Icon and Metadata
-    description                           : # Enter iOS app ID in the _config.yml file to automatically fetch app icon, price and App Store Link.
-    fontawesome_icon_name                 : # sync
+  - title                                 : Choice of voices
+    description                           : Pick between a selection of high-quality voices to narrate your books to you.
+    fontawesome_icon_name                 : users
 
   - title                                 : # Easy to Tweak
     description                           : # Tweak accent color, images, icons and transparency via the _config.yml file. No HTML/CSS needed.
