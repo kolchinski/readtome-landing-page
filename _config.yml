@@ -41,7 +41,7 @@ features                                  :
     fontawesome_icon_name                 : camera
     
   - title                                 : Scans -> Audio!
-    description                           : The scans are converted to high-quality audio using modern AI technology.
+    description                           : The scans are converted to high-quality audio, without page numbers, footers, etc.
     fontawesome_icon_name                 : magic
 
   - title                                 : Listen anytime
