@@ -55,20 +55,22 @@
                             {{ site.app_description }}
                         </p>
                     </div>
-                    <div class="audio-player-container">
-                        <div class="audio-label">Sample Audio</div>
-                        <audio controls>
-                            <source src="/assets/sample_audio.mp3" type="audio/mpeg">
-                            Your browser does not support the audio element.
-                        </audio>
-                    </div>
-                    <div class="downloadButtonsContainer">
-                        {% if site.playstore_link %}
-                        <a class="playStoreLink" href="{{site.playstore_link}}"><img class="playStore"
-                                src="assets/playstore.png"></a>
-                        {% endif %}
-                        <a class="appStoreLink" href="{{site.appstore_link}}"><img class="appStore"
-                                src="assets/appstore.png"></a>
+                    <div class="media-container">
+                        <div class="audio-player-container">
+                            <div class="audio-label">Sample Audio</div>
+                            <audio controls>
+                                <source src="/assets/sample_audio.mp3" type="audio/mpeg">
+                                Your browser does not support the audio element.
+                            </audio>
+                        </div>
+                        <div class="downloadButtonsContainer">
+                            {% if site.playstore_link %}
+                            <a class="playStoreLink" href="{{site.playstore_link}}"><img class="playStore"
+                                    src="assets/playstore.png"></a>
+                            {% endif %}
+                            <a class="appStoreLink" href="{{site.appstore_link}}"><img class="appStore"
+                                    src="assets/appstore.png"></a>
+                        </div>
                     </div>
                 </div>
                 {% include features.html %}

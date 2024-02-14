@@ -693,10 +693,7 @@ footer {
 	text-align: center;
 	/* Center the label text and the audio player */
 	margin: 20px auto;
-	/* Center the container */
-	display: inline-block;
-	margin-top: 42px;
-	filter: $drop-shadow;
+	/* Center the container on the page */
 }
 
 .audio-label {
@@ -704,4 +701,14 @@ footer {
 	/* White text color */
 	margin-bottom: 8px;
 	/* Space between the label and the audio player */
+}
+
+.media-container {
+	display: flex;
+	flex-direction: column;
+	/* Stack children vertically */
+	align-items: center;
+	/* Center-align children horizontally */
+	gap: 20px;
+	/* Space between audio player and download button */
 }
