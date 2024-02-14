@@ -687,62 +687,75 @@ footer {
 	display: none;
 }
 
+
+
+
 .audio-player-container {
-	background: #fff;
-	/* White background to match the page */
-	border-radius: 20px;
-	/* Rounded corners to match the app's style */
-	box-shadow: 0 8px 24px rgba(0, 0, 0, 0.1);
-	/* Subtle shadow for depth */
-	padding: 16px;
-	/* Space inside the container */
+	background-color: #f8f8f8;
+	/* Light grey background to match the app's color scheme */
+	border-radius: 10px;
+	/* Rounded corners for the container */
+	box-shadow: 0 2px 4px rgba(0, 0, 0, 0.1);
+	/* Subtle shadow for depth, similar to the button */
+	padding: 10px 15px;
+	/* Padding inside the container */
 	text-align: center;
-	/* Center align the contents */
-	width: fit-content;
-	/* Adjust width to content size */
+	/* Center the label text */
+	max-width: 300px;
+	/* Max width of the container */
 	margin: 20px auto;
-	/* Center the container on the page */
+	/* Center the container */
 	display: flex;
 	/* Use flexbox for layout */
 	flex-direction: column;
-	/* Stack elements vertically */
+	/* Arrange children in a column */
 	align-items: center;
-	/* Align children in the center */
-	gap: 8px;
-	/* Space between elements */
+	/* Center-align children horizontally */
+	gap: 5px;
+	/* Space between label and audio player */
 }
 
 .audio-label {
-	font-size: 18px;
-	/* Increase font size */
+	font-family: 'Arial', sans-serif;
+	/* Match the font to the rest of the page */
+	font-size: 16px;
+	/* Slightly larger font size for the label */
+	font-weight: bold;
+	/* Bold font for the label */
 	color: #333;
-	/* Dark text to stand out on the white background */
-	margin-bottom: 0;
-	/* Reduce space between label and player if needed */
-	font-weight: 600;
-	/* Font weight similar to the 'Download on the App Store' button */
+	/* Dark grey color for the text to match the page */
+	margin-bottom: 8px;
+	/* Space between the label and the audio controls */
 	text-transform: uppercase;
-	/* Uppercase label text */
+	/* Uppercase text for the label */
 	letter-spacing: 1px;
-	/* Space out the letters a little */
+	/* Standard letter-spacing for uppercase */
 }
 
 audio {
 	width: 100%;
-	/* Full width of the container */
-	outline: none;
-	/* Remove focus outline */
-	border-radius: 10px;
-	/* Rounded corners on the player */
+	/* Ensure audio player stretches to full container width */
+	border: none;
+	/* Remove any border */
+	background-color: transparent;
+	/* Transparent background for audio player */
 }
 
-/* Custom styles for the audio controls */
-/* Note: Browser default audio controls are limited in terms of styling */
+/* Customizing the default audio player's appearance is limited */
+/* However, these rules target Safari's audio player for minimal styling */
 audio::-webkit-media-controls-panel {
 	background-color: transparent;
-	/* Make the background transparent */
+	/* Make the panel transparent */
 	border-radius: 10px;
-	/* Rounded corners to match the container */
+	/* Rounded corners */
 }
 
-/* You may need additional vendor prefixes or styles for other browsers */
+audio::-webkit-media-controls-play-button,
+audio::-webkit-media-controls-current-time-display,
+audio::-webkit-media-controls-time-remaining-display,
+audio::-webkit-media-controls-volume-slider {
+	color: #333;
+	/* Controls color to match the text */
+}
+
+/* The above selectors may not affect all browsers but will apply to Safari */
