@@ -688,36 +688,61 @@ footer {
 }
 
 .audio-player-container {
-	background: #ffffff;
-	/* Background color to match your site */
-	border-radius: 10px;
-	/* Rounded corners */
-	box-shadow: 0 4px 6px rgba(0, 0, 0, 0.1);
-	/* Shadow to match your site's style */
-	padding: 15px;
-	/* Padding around the container */
+	background: #fff;
+	/* White background to match the page */
+	border-radius: 20px;
+	/* Rounded corners to match the app's style */
+	box-shadow: 0 8px 24px rgba(0, 0, 0, 0.1);
+	/* Subtle shadow for depth */
+	padding: 16px;
+	/* Space inside the container */
 	text-align: center;
-	/* Center the label text */
-	max-width: 300px;
-	/* Maximum width of the audio player */
+	/* Center align the contents */
+	width: fit-content;
+	/* Adjust width to content size */
 	margin: 20px auto;
 	/* Center the container on the page */
+	display: flex;
+	/* Use flexbox for layout */
+	flex-direction: column;
+	/* Stack elements vertically */
+	align-items: center;
+	/* Align children in the center */
+	gap: 8px;
+	/* Space between elements */
 }
 
 .audio-label {
-	font-weight: bold;
+	font-size: 18px;
+	/* Increase font size */
 	color: #333;
-	/* Color for the label text */
-	margin-bottom: 10px;
-	/* Space between the label and the player */
+	/* Dark text to stand out on the white background */
+	margin-bottom: 0;
+	/* Reduce space between label and player if needed */
+	font-weight: 600;
+	/* Font weight similar to the 'Download on the App Store' button */
+	text-transform: uppercase;
+	/* Uppercase label text */
+	letter-spacing: 1px;
+	/* Space out the letters a little */
 }
 
 audio {
 	width: 100%;
-	/* Make the audio player fit the container */
-	/* This ensures the audio player is as wide as the container minus padding */
-	height: auto;
-	/* Keep the player's height auto to maintain aspect ratio */
-	border-radius: 5px;
-	/* Slightly rounded corners for the audio player */
+	/* Full width of the container */
+	outline: none;
+	/* Remove focus outline */
+	border-radius: 10px;
+	/* Rounded corners on the player */
 }
+
+/* Custom styles for the audio controls */
+/* Note: Browser default audio controls are limited in terms of styling */
+audio::-webkit-media-controls-panel {
+	background-color: transparent;
+	/* Make the background transparent */
+	border-radius: 10px;
+	/* Rounded corners to match the container */
+}
+
+/* You may need additional vendor prefixes or styles for other browsers */
