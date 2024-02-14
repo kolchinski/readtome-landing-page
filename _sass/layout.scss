@@ -689,73 +689,19 @@ footer {
 
 
 
-
 .audio-player-container {
-	background-color: #f8f8f8;
-	/* Light grey background to match the app's color scheme */
-	border-radius: 10px;
-	/* Rounded corners for the container */
-	box-shadow: 0 2px 4px rgba(0, 0, 0, 0.1);
-	/* Subtle shadow for depth, similar to the button */
-	padding: 10px 15px;
-	/* Padding inside the container */
 	text-align: center;
-	/* Center the label text */
-	max-width: 300px;
-	/* Max width of the container */
+	/* Center the label text and the audio player */
 	margin: 20px auto;
 	/* Center the container */
-	display: flex;
-	/* Use flexbox for layout */
-	flex-direction: column;
-	/* Arrange children in a column */
-	align-items: center;
-	/* Center-align children horizontally */
-	gap: 5px;
-	/* Space between label and audio player */
+	display: inline-block;
+	margin-top: 42px;
+	filter: $drop-shadow;
 }
 
 .audio-label {
-	font-family: 'Arial', sans-serif;
-	/* Match the font to the rest of the page */
-	font-size: 16px;
-	/* Slightly larger font size for the label */
-	font-weight: bold;
-	/* Bold font for the label */
-	color: #333;
-	/* Dark grey color for the text to match the page */
+	color: #fff;
+	/* White text color */
 	margin-bottom: 8px;
-	/* Space between the label and the audio controls */
-	text-transform: uppercase;
-	/* Uppercase text for the label */
-	letter-spacing: 1px;
-	/* Standard letter-spacing for uppercase */
+	/* Space between the label and the audio player */
 }
-
-audio {
-	width: 100%;
-	/* Ensure audio player stretches to full container width */
-	border: none;
-	/* Remove any border */
-	background-color: transparent;
-	/* Transparent background for audio player */
-}
-
-/* Customizing the default audio player's appearance is limited */
-/* However, these rules target Safari's audio player for minimal styling */
-audio::-webkit-media-controls-panel {
-	background-color: transparent;
-	/* Make the panel transparent */
-	border-radius: 10px;
-	/* Rounded corners */
-}
-
-audio::-webkit-media-controls-play-button,
-audio::-webkit-media-controls-current-time-display,
-audio::-webkit-media-controls-time-remaining-display,
-audio::-webkit-media-controls-volume-slider {
-	color: #333;
-	/* Controls color to match the text */
-}
-
-/* The above selectors may not affect all browsers but will apply to Safari */
