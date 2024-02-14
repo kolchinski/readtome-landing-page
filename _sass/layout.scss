@@ -687,52 +687,37 @@ footer {
 	display: none;
 }
 
-
-/* Custom Audio Player Styles */
-.audio-player {
+.audio-player-container {
+	background: #ffffff;
+	/* Background color to match your site */
+	border-radius: 10px;
+	/* Rounded corners */
+	box-shadow: 0 4px 6px rgba(0, 0, 0, 0.1);
+	/* Shadow to match your site's style */
+	padding: 15px;
+	/* Padding around the container */
+	text-align: center;
+	/* Center the label text */
+	max-width: 300px;
+	/* Maximum width of the audio player */
 	margin: 20px auto;
-	width: 300px;
-	/* Adjust as necessary to fit your layout */
+	/* Center the container on the page */
 }
 
-.audio-player p {
-	color: #000;
-	/* Sample text color from your CSS variables */
-	text-align: center;
+.audio-label {
 	font-weight: bold;
+	color: #333;
+	/* Color for the label text */
 	margin-bottom: 10px;
+	/* Space between the label and the player */
 }
 
 audio {
 	width: 100%;
-	/* Ensures the audio player stretches to the width of the container */
-	border-radius: 20px;
-	/* Rounded corners, similar to your site's theme */
-	box-shadow: 0 4px 6px rgba(0, 0, 0, 0.1);
-	/* A subtle shadow similar to the app icon shadow */
-	background: linear-gradient(to bottom,
-			#ffffff 0%,
-			#f2f2f2 100%);
-	/* A subtle gradient for the audio player background */
-	overflow: hidden;
-	/* Ensures the corners remain rounded */
-}
-
-/* Style the audio controls */
-/* This part is tricky since it's not standardized across browsers */
-/* The following is an example for Chrome */
-audio::-webkit-media-controls-panel {
-	background-color: rgba(255, 255, 255, 0.7);
-	/* Semi-transparent background */
-	border-radius: 20px;
-}
-
-audio::-webkit-media-controls-play-button,
-audio::-webkit-media-controls-volume-slider-container,
-audio::-webkit-media-controls-current-time-display,
-audio::-webkit-media-controls-time-remaining-display,
-audio::-webkit-media-controls-timeline,
-audio::-webkit-media-controls-timeline-container {
-	color: #000;
-	/* Control icons color */
+	/* Make the audio player fit the container */
+	/* This ensures the audio player is as wide as the container minus padding */
+	height: auto;
+	/* Keep the player's height auto to maintain aspect ratio */
+	border-radius: 5px;
+	/* Slightly rounded corners for the audio player */
 }
