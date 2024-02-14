@@ -335,8 +335,8 @@ nav>ul li a:active {
 }
 
 .downloadButtonsContainer {
-	display: inline-block;
-	margin-top: 42px;
+	display: block;
+	margin-top: 20px;
 	filter: $drop-shadow;
 }
 
@@ -705,6 +705,7 @@ footer {
 }
 
 .media-container {
+	margin-top: 20px;
 	display: flex;
 	flex-direction: column;
 	/* Stack children vertically */
