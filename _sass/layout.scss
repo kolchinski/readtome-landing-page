@@ -701,6 +701,7 @@ footer {
 	/* White text color */
 	margin-bottom: 8px;
 	/* Space between the label and the audio player */
+	font-weight: bold;
 }
 
 .media-container {
@@ -709,6 +710,6 @@ footer {
 	/* Stack children vertically */
 	align-items: center;
 	/* Center-align children horizontally */
-	gap: 20px;
+	gap: 5px;
 	/* Space between audio player and download button */
 }
